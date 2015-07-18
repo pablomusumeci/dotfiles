@@ -2,7 +2,7 @@ set relativenumber
 set t_Co=256
 syntax on
 " set dark background and color scheme
-colorscheme wombat256
+colorscheme molokai 
 " Cambio escape por jj"
 inoremap jj <Esc>
 " Desactivo esc"
