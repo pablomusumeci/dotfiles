@@ -20,6 +20,8 @@ set autoindent
 set listchars=tab:▸\ ,eol:¬
 " Caracteres ocultos visibles
 set list
+" Cambio TAB por espacios
+set expandtab
 " Give a shortcut key to NERD Tree
 map <F2> :NERDTreeToggle<CR>
 " Plugins
@@ -34,9 +36,9 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
 " Plugins
 Plugin 'scrooloose/nerdtree.git'
+Plugin 'scrooloose/syntastic.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
