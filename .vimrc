@@ -46,7 +46,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'scrooloose/syntastic.git'
 Plugin 'Yggdroot/indentLine'
-
+Plugin 'bling/vim-airline'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -54,3 +54,14 @@ filetype plugin indent on    " required
 " autopen NERDTree and focus cursor in new document
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
+
+" airline symbols
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='powerlineish'
+
+" syntastic symbols
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_style_error_symbol = '✗'
+let g:syntastic_warning_symbol = '!'
+let g:syntastic_style_warning_symbol = '!'
