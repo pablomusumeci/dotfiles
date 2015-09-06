@@ -47,6 +47,7 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'scrooloose/syntastic.git'
 Plugin 'Yggdroot/indentLine'
 Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -65,3 +66,7 @@ let g:syntastic_error_symbol = '✗'
 let g:syntastic_style_error_symbol = '✗'
 let g:syntastic_warning_symbol = '!'
 let g:syntastic_style_warning_symbol = '!'
+
+" ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
