@@ -62,6 +62,9 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  docker
+  docker-compose
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -94,8 +97,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
+export JAVA_HOME
 
-MAVEN_HOME="/Users/pablo/Applications/apache-maven-3.5.4"
+MAVEN_HOME="/Users/pablo/Applications/apache-maven-3.6.1"
 export MAVEN_HOME
 PATH=$PATH:$MAVEN_HOME/bin
 
@@ -110,8 +115,8 @@ alias gadu='git add -u'
 alias gcp='git cherry-pick'
 alias stash='git stash'
 
-alias mvcli='mvn clean install'
-alias mvclis='mvn clean install -DskipTests -Dverification.skip'
+alias mvcli='mvn clean install -Dstyle.color=always'
+alias mvclis='mvn clean install -DskipTests -Dverification.skip -Dstyle.color=always'
 
 alias dc='docker-compose'
 alias gcom="git commit -m \"Comments\""
@@ -122,3 +127,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # rbenv
 eval "$(rbenv init -)"
+
+export GOPATH=$HOME/code/go
+export NEXUS_USERNAME=""
+export NEXUS_PASSWORD=""
+export DOCKER_USERNAME=""
+export DOCKER_PASSWORD=""
+
