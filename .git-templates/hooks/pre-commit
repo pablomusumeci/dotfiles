@@ -1,0 +1,5 @@
+# Run formatter
+$GIT_DIR/../picnic-shared-tools/format.sh --fast
+
+# Add the formatting changes to the staged files and then add those modified files to the commit
+git add `git diff --cached --name-only --diff-filter=d`
